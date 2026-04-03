@@ -134,7 +134,7 @@ int main()
     // Join the child thread on exit.
     auto thread_joiner = so_5::auto_join(child_thread);
 
-    // All chains has to be closed on exit.
+    // All chains have to be closed on exit.
     auto chain_closer = so_5::auto_close_drop_content(
             pool_chain,
             completion_chain);
