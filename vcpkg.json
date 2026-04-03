@@ -1,0 +1,7 @@
+{
+	"builtin-baseline": "fa86ef0534bd613dd5e7a46f069745cf514ad221",
+	"dependencies": [
+		"mimalloc",
+		"sobjectizer"
+	]
+}
