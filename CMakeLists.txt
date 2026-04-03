@@ -30,3 +30,9 @@ target_link_libraries(mimalloc_so5_case
 	PRIVATE
 		$<IF:$<TARGET_EXISTS:mimalloc-static>,mimalloc-static,mimalloc>
 		sobjectizer::StaticLib)
+
+if(WIN32)
+	set_property(TARGET mimalloc_so5_case PROPERTY
+		MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+endif()
+
